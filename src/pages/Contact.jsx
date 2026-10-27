@@ -41,7 +41,7 @@ export default function Contact() {
 
   return (
     <Section
-      eyebrow="08 / CONTACT"
+      eyebrow="05 / CONTACT"
       title={
         <>
           Let's build something <em>reliable.</em>

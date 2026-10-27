@@ -6,28 +6,46 @@ const groups = [
     'Testing',
     [
       'Manual Testing',
-      'Exploratory Testing',
+      'Automation Testing',
       'Functional Testing',
       'Regression Testing',
       'Smoke Testing',
+      'Sanity Testing',
       'UI Testing',
-      'Usability Testing',
       'Cross-Browser Testing',
-      'Bug Report Writing',
-      'Test Plan / Test Strategy',
+      'Responsive Testing',
+      'Test Plan',
+      'Test Case Design',
+      'Test Execution',
+      'Defect Tracking',
       'Boundary Value Analysis',
+      'Equivalence Partitioning',
+      'Bug Reporting',
     ],
   ],
-  ['Automation', ['Playwright (JavaScript)', 'Page Object Model (POM)', 'Fixtures', 'End-to-End Testing', 'Assertions', 'Locators']],
-  ['Tools', ['Jira (Basics)', 'GitHub', 'GitHub Actions', 'VS Code']],
-  ['Concepts', ['SDLC', 'STLC', 'Agile', 'Scrum', 'Test Case Design', 'Defect Lifecycle']],
-  ['Development', ['React.js', 'Node.js', 'Express.js', 'MongoDB']],
+  [
+    'Automation',
+    [
+      'Playwright',
+      'JavaScript (ES6+)',
+      'Page Object Model (POM)',
+      'Fixtures',
+      'Locators',
+      'Assertions',
+      'Waits',
+      'End-to-End Testing',
+      'Test Debugging',
+    ],
+  ],
+  ['Tools', ['Jira', 'Postman (Basics)', 'Git', 'GitHub', 'VS Code']],
+  ['Additional Technical Skills', ['React.js', 'Node.js', 'Express.js', 'MongoDB']],
+  ['Methodologies', ['SDLC', 'STLC', 'Agile', 'Scrum', 'Defect Lifecycle', 'Version Control']],
 ];
 
 export default function Skills() {
   return (
     <Section
-      eyebrow="03 / SKILLS"
+      eyebrow="02 / SKILLS"
       title="A QA-first engineering toolkit."
       description="The skills I use to test, automate, understand and improve web applications."
     >
@@ -44,8 +62,8 @@ export default function Skills() {
             <span className="orbit-node n1">Testing</span>
             <span className="orbit-node n2">Automation</span>
             <span className="orbit-node n3">Tools</span>
-            <span className="orbit-node n4">Concepts</span>
-            <span className="orbit-node n5">Development</span>
+            <span className="orbit-node n4">Methods</span>
+            <span className="orbit-node n5">Tech</span>
           </div>
         </Reveal>
 

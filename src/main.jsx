@@ -8,9 +8,9 @@ import Background from './components/Background';
 import Navbar from './components/Navbar';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Freelance from './pages/Freelance';
 import Home from './pages/Home';
 import Resume from './pages/Resume';
+import Services from './pages/Services';
 import Skills from './pages/Skills';
 
 function ScrollToTop() {
@@ -23,7 +23,7 @@ function ScrollToTop() {
   return null;
 }
 
-function App() {
+export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
@@ -54,7 +54,7 @@ function App() {
               <Route path="/skills" element={<Skills />} />
               <Route path="/projects" element={<Navigate to="/about" replace />} />
               <Route path="/qa-lab" element={<Navigate to="/about" replace />} />
-              <Route path="/freelance" element={<Freelance />} />
+              <Route path="/freelance" element={<Services />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
@@ -70,7 +70,11 @@ function App() {
   );
 }
 
-createRoot(document.getElementById('root')).render(
+const container = document.getElementById('root');
+const root = container.__reactRoot ?? createRoot(container);
+container.__reactRoot = root;
+
+root.render(
   <BrowserRouter>
     <App />
   </BrowserRouter>,

@@ -22,12 +22,12 @@ const services = [
   },
 ];
 
-export default function Freelance() {
+export default function Services() {
   return (
     <div className="freelance-page">
       <section className="freelance-hero">
         <div className="freelance-copy">
-          <div className="eyebrow">06 / FREELANCE SERVICES</div>
+          <div className="eyebrow">03 / SERVICES</div>
           <h1>
             Reliable testing.<br />
             Better products.<br />
@@ -37,6 +37,13 @@ export default function Freelance() {
             I help businesses improve software quality through manual testing,
             Playwright automation and web development.
           </p>
+
+          <div className="service-tags" aria-label="Core service strengths">
+            <span>Manual QA</span>
+            <span>Automation</span>
+            <span>Web Development</span>
+            <span>Product Thinking</span>
+          </div>
 
           <div className="hero-actions">
             <Link className="btn primary" to="/contact">

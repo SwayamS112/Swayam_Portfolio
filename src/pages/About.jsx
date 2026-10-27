@@ -169,7 +169,7 @@ export default function About() {
             <h2>Academic Foundation</h2>
             <p className="edu-subtitle">Him Academy Public School, Vikasnagar, Hamirpur</p>
             <p className="edu-location">Himachal Pradesh, India</p>
-            <div className="grade-line"><strong>10th:</strong> 72% (2019 — 2020) &nbsp; <strong>12th:</strong> 68% (2021 — 2022)</div>
+            <div className="grade-line"><strong>10th:</strong> 72% &nbsp; <strong>12th:</strong> 68%  </div>
           </div>
 
           <div className="location"><MapPin size={14} /> Himachal Pradesh, India</div>

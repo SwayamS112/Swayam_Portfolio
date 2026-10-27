@@ -5,7 +5,7 @@ import Section from '../components/Section';
 export default function Resume() {
   return (
     <Section
-      eyebrow="07 / RESUME"
+      eyebrow="04 / RESUME"
       title="One page. The complete picture."
       description="Review the complete resume here and open or download the PDF version whenever needed."
     >
